@@ -321,7 +321,6 @@ if __name__ == '__main__':
     )
         sys.exit(rv)
     except KeyboardInterrupt:
-        print("Application terminated by user")
         sys.exit(2)
     except Exception as e:
         print(f"\nError: {e}", file=sys.stderr)
