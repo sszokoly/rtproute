@@ -140,7 +140,7 @@ if __name__ == '__main__':
     import argparse
     import sys
 
-    sys.argv.extend(['-m', '12', '8.8.8.8'])
+    #sys.argv.extend(['-m', '12', '8.8.8.8'])
 
     class CustomHelpFormatter(argparse.HelpFormatter):
         def _format_action_invocation(self, action):
@@ -165,7 +165,7 @@ if __name__ == '__main__':
                 return ", ".join(parts)
 
     parser = argparse.ArgumentParser(
-        description="UDP/ICMP traceroute",
+        description="UDP traceroute with RTP payload",
         add_help=False,
         formatter_class=CustomHelpFormatter,
     )
